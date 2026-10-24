@@ -1,0 +1,5 @@
+TASK 1 WOKWI PROJECT
+
+https://wokwi.com/projects/477019229045221377
+
+Open this URL to directly access the Task 1 ESP32 + Wokwi project.
