@@ -1,0 +1,361 @@
+{
+  "version": 1,
+  "author": "Modular BMS",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 20,
+      "left": 20,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -10,
+      "left": 520,
+      "attrs": {
+        "pins": "i2c"
+      }
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "relay1",
+      "top": 80,
+      "left": 520,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "buzz",
+      "top": 330,
+      "left": 510,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledG",
+      "top": 300,
+      "left": 300,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledR",
+      "top": 360,
+      "left": 300,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot1",
+      "top": -120,
+      "left": 300,
+      "attrs": {
+        "value": "850"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot2",
+      "top": -50,
+      "left": 300,
+      "attrs": {
+        "value": "840"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot3",
+      "top": 20,
+      "left": 300,
+      "attrs": {
+        "value": "830"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot4",
+      "top": 90,
+      "left": 300,
+      "attrs": {
+        "value": "820"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot5",
+      "top": 160,
+      "left": 300,
+      "attrs": {
+        "value": "780"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot6",
+      "top": 230,
+      "left": 300,
+      "attrs": {
+        "value": "200"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 430,
+      "left": 300,
+      "attrs": {
+        "color": "blue"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 495,
+      "left": 300,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": 560,
+      "left": 300,
+      "attrs": {
+        "color": "red"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "pot1:SIG",
+      "esp:GPIO32",
+      "green",
+      []
+    ],
+    [
+      "pot1:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "pot1:GND",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "pot2:SIG",
+      "esp:GPIO33",
+      "green",
+      []
+    ],
+    [
+      "pot2:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "pot2:GND",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "pot3:SIG",
+      "esp:GPIO34",
+      "green",
+      []
+    ],
+    [
+      "pot3:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "pot3:GND",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "pot4:SIG",
+      "esp:GPIO35",
+      "green",
+      []
+    ],
+    [
+      "pot4:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "pot4:GND",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "pot5:SIG",
+      "esp:GPIO36",
+      "green",
+      []
+    ],
+    [
+      "pot5:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "pot5:GND",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "pot6:SIG",
+      "esp:GPIO39",
+      "green",
+      []
+    ],
+    [
+      "pot6:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "pot6:GND",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "lcd1:SDA",
+      "esp:GPIO21",
+      "green",
+      []
+    ],
+    [
+      "lcd1:SCL",
+      "esp:GPIO22",
+      "green",
+      []
+    ],
+    [
+      "lcd1:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "lcd1:GND",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "relay1:VCC",
+      "esp:5V",
+      "red",
+      []
+    ],
+    [
+      "relay1:GND",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "relay1:IN",
+      "esp:GPIO23",
+      "green",
+      []
+    ],
+    [
+      "buzz:2",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "buzz:1",
+      "esp:GPIO14",
+      "green",
+      []
+    ],
+    [
+      "ledG:A",
+      "esp:GPIO26",
+      "green",
+      []
+    ],
+    [
+      "ledG:C",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "ledR:A",
+      "esp:GPIO27",
+      "green",
+      []
+    ],
+    [
+      "ledR:C",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "btn1:1.l",
+      "esp:GPIO16",
+      "green",
+      []
+    ],
+    [
+      "btn1:2.l",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "btn2:1.l",
+      "esp:GPIO17",
+      "green",
+      []
+    ],
+    [
+      "btn2:2.l",
+      "esp:GND",
+      "black",
+      []
+    ],
+    [
+      "btn3:1.l",
+      "esp:GPIO18",
+      "green",
+      []
+    ],
+    [
+      "btn3:2.l",
+      "esp:GND",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}
