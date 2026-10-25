@@ -1,0 +1,28 @@
+TASK 4 VIDEO EVIDENCE INDEX
+
+The final supplied video is:
+Modular BMS - Wokwi ESP32, STM32, Arduino Simulator - Google Chrome 2026-10-08 00-12-52.mp4
+
+Selected screenshots were extracted from the video:
+
+01_Normal_State.jpg
+Shows TASK 4 BMS STARTED, FAULT STATE MACHINE READY, STATE: NORMAL.
+
+02_Degraded_COMM.jpg
+Shows COMMUNICATION FAILURE ENABLED and structured transition:
+NORMAL -> DEGRADED, F003 COMM.
+
+03_Failsafe_Relay.jpg
+Shows RELAY MISMATCH ENABLED and structured transition:
+DEGRADED -> FAILSAFE, F002 RELAY. LCD shows FAILSAFE / F002 RELAY.
+
+04_Recovery_Verified.jpg
+Shows recovery verification output and:
+FAILSAFE -> NORMAL, F000 NONE,
+RECOVERY VERIFIED,
+SYSTEM RETURNED TO NORMAL.
+
+05_Failsafe_ADC_Frozen.jpg
+Shows ADC FROZEN TEST ENABLED and:
+DEGRADED -> FAILSAFE, F004 ADC_FROZEN.
+LCD shows FAILSAFE / F004 ADC_FROZEN.

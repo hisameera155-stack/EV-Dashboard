@@ -1,0 +1,22 @@
+TASK 4 – Fault State Machine with Structured Recovery
+
+Requirement:
+Implement a deterministic state machine with four operating states:
+NORMAL, DEGRADED, FAILSAFE, and SHUTDOWN, using an enum and a clearly
+defined transition table.
+
+The system must:
+• Isolate faults by source: battery cells, relay, communication, ADC.
+• Maintain fault information during operation.
+• Detect frozen ADC values and relay mismatches.
+• Log every state transition with timestamp, previous state, new state,
+  and fault ID in a structured format.
+• Recover from FAILSAFE through a verification process rather than
+  immediately returning to NORMAL.
+• Avoid deadlock-prone blocking behavior during normal monitoring and
+  recovery.
+
+Wokwi implementation:
+The existing Task 3 circuit was retained. The existing four-button
+arrangement includes the relay-mismatch test input on GPIO19, so no
+additional circuit rebuild was required.

@@ -1,0 +1,26 @@
+TASK 4 CIRCUIT DOCUMENTATION
+
+The Task 4 implementation reuses the working Task 3 Wokwi circuit.
+
+ESP32 pins:
+Cell 1 POT        GPIO32
+Cell 2 POT        GPIO33
+Cell 3 POT        GPIO34
+Cell 4 POT        GPIO35
+SOC POT           GPIO36
+Current POT       GPIO39
+Relay             GPIO23
+Green LED         GPIO25
+Red LED           GPIO27
+Buzzer             GPIO14
+Frozen button      GPIO16
+Jump button        GPIO17
+Range button       GPIO18
+Relay feedback     GPIO19
+LCD SDA            GPIO21
+LCD SCL            GPIO22
+
+The uploaded final demonstration shows the complete Wokwi circuit,
+LCD, relay, LEDs, buzzer, six potentiometers and four pushbuttons.
+
+No new circuit reconstruction was required for Task 4.

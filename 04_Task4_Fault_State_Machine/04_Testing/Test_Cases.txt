@@ -1,0 +1,53 @@
+TASK 4 TEST MATRIX
+
+TC-01 NORMAL STATE
+Input: Start simulation with no injected fault.
+Expected: NORMAL state; normal LCD telemetry; green LED active; relay active.
+Evidence: Screenshot 01_Normal_State.jpg.
+Result: PASS.
+
+TC-02 COMMUNICATION FAILURE / DEGRADED
+Input: COMM_FAIL.
+Expected: NORMAL -> DEGRADED, fault F003 COMM, structured transition log.
+Evidence: Screenshot 02_Degraded_COMM.jpg.
+Result: PASS.
+
+TC-03 RELAY MISMATCH / FAILSAFE
+Input: RELAY_FAIL.
+Expected: DEGRADED -> FAILSAFE, fault F002 RELAY, relay commanded safe/off,
+red LED and buzzer active.
+Evidence: Screenshot 03_Failsafe_Relay.jpg.
+Result: PASS.
+
+TC-04 FAILSAFE RECOVERY VERIFICATION
+Input: Clear active test conditions, then CLEAR.
+Expected: recovery verification first; relay remains safe during verification;
+after stable verification, FAILSAFE -> NORMAL with F000/NONE transition.
+Evidence: Screenshot 04_Recovery_Verified.jpg.
+Result: PASS.
+
+TC-05 FROZEN ADC
+Input: FREEZE_ADC.
+Expected: F004 ADC_FROZEN and transition into FAILSAFE after the detection
+interval.
+Evidence: Screenshot 05_Failsafe_ADC_Frozen.jpg.
+Result: PASS.
+
+TC-06 SHUTDOWN STATE
+Input: SHUTDOWN command.
+Expected: transition to SHUTDOWN, relay off, red LED/buzzer safety output,
+no automatic recovery.
+Evidence: Not visibly demonstrated in the supplied final video.
+Result: IMPLEMENTED; VIDEO EVIDENCE NOT CAPTURED.
+
+TC-07 ADC RANGE
+Input: RANGE or range-fault condition.
+Expected: F005 ADC_RANGE -> FAILSAFE.
+Evidence: Not part of the final uploaded Task 4 evidence set.
+Result: AVAILABLE FOR ADDITIONAL TESTING.
+
+TC-08 VOLTAGE JUMP
+Input: JUMP.
+Expected: F006 VOLT_JUMP -> FAILSAFE.
+Evidence: Not part of the final uploaded Task 4 evidence set.
+Result: AVAILABLE FOR ADDITIONAL TESTING.

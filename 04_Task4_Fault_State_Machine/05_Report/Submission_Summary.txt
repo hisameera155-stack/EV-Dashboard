@@ -1,0 +1,16 @@
+TASK 4 FINAL SUBMISSION SUMMARY
+
+Core demonstrated tests:
+PASS - NORMAL
+PASS - Communication failure -> DEGRADED (F003)
+PASS - Relay mismatch -> FAILSAFE (F002)
+PASS - FAILSAFE recovery verification -> NORMAL
+PASS - Frozen ADC -> FAILSAFE (F004)
+
+Additional documented tests:
+SHUTDOWN, ADC_RANGE and VOLT_JUMP are implemented/documented but are not
+claimed as visually demonstrated in the supplied final video.
+
+See Task_4_Detailed_Report.pdf for the detailed report.
+See 04_Testing/Screenshots for evidence images.
+See 06_Demo_Video for the final uploaded video.

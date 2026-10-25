@@ -1,0 +1,19 @@
+TASK 4 CODE PACKAGE NOTE
+
+The exact running source is maintained in the user's Wokwi sketch. The
+video evidence shows the Task 4 implementation running from that sketch.
+
+Core software elements used in the demonstrated implementation:
+• enum states: NORMAL, DEGRADED, FAILSAFE, SHUTDOWN
+• fault IDs: F000–F006
+• structured JSON-like transition logs
+• ADC frozen detection
+• relay mismatch detection
+• communication fault handling
+• recovery verification timer
+• LCD state/fault display
+• non-blocking periodic monitoring in loop()
+
+Important: this package does not invent a diagram.json or reconstruct
+unseen source lines from the video. The authoritative project source
+remains the Wokwi project linked above.
